@@ -13,7 +13,7 @@ use EWZ\Bundle\RecaptchaBundle\Validator\Constraints\IsTrueV3;
 
 class HomeType extends AbstractType
 {
-    public function buildForm(FormBuilderInterface $builder, array $options): void
+    public function buildForm(FormBuilderInterface $builder, array $options = null): void
     {
         $builder
             ->add('email', EmailType::class, [
